@@ -1,0 +1,62 @@
+script#main-template(type="text/template")
+	h1 LCS Stats
+	p Welcome to LCS Stats
+
+script#header-template(type="text/template")
+	a.start-app-tour-link [Click to start page tour]
+
+script#player-summary-template(type="text/template")
+	.well.pull-left
+		img.media-object(src!="<%= picPath %>")
+	.media-body
+		h3.media-heading 
+			<a class="player-link" href="/players/<%= _id %>"><%= nick %></a>
+		.player-votes
+			span Vote:
+			.btn-group
+				button.btn.up-vote Up
+				button.btn.down-vote Down
+			span Votes: 
+				span.player-votecount <%= votes %>
+			span Score: 
+				span.player-votescore <%= voteScore %>
+			span Rank:
+				span.player-rank <%= rank %>
+		.player-info
+			ul.list-group
+				li.list-group-item Name: <%= name %>
+				li.list-group-item Position: <%= position %>
+				li.list-group-item Team: <%= currentTeam %>
+
+script#player-detail-template(type="text/template")
+	h2 Player Details:
+	#player-details
+	button.edit-player.btn.btn-primary(type='button') Edit
+	.player-form
+	button.save-player.confirm-buttonset.btn.btn-default(type='button') Done
+	button.edit-cancel.confirm-buttonset.btn.btn-danger(type='button') Cancel
+
+script#player-template(type="text/template")
+	.well.pull-left
+		img.media-object(src!="<%= picPath %>")
+	.media-body
+		h3.media-heading 
+			<a class="player-link" href="/players/<%= _id %>"><%= nick %></a>
+		.player-votes
+			span Vote:
+			.btn-group
+				button.btn.up-vote Up
+				button.btn.down-vote Down
+			span Votes: 
+				span.player-votecount <%= votes %>
+			span Score: 
+				span.player-votescore <%= voteScore %>
+			span Rank:
+				span.player-rank <%= rank %>
+		.player-info
+			ul.list-group
+				li.list-group-item Name: <%= name %>
+				li.list-group-item Position: <%= position %>
+				li.list-group-item Current Team: <%= currentTeam %>
+				li.list-group-item Info: <%= info %>
+	

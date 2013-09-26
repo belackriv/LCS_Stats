@@ -1,0 +1,18 @@
+a.pull-left
+	img.media-object(src=player.picPath)
+.media-body JADE TEMPLATE
+	h3.media-heading
+		a.player-link(href='/players/'+player._id)=player.nick
+	.votes
+		|Vote:
+		.btn-group
+			button.btn.up-vote Up
+			button.btn.down-vote Down
+		span Votes: 
+			span.player-votes=player.votes
+		span Rank:
+			span.player-rank=player.rank
+	ul
+		li Name: #{player.name}
+		li Position: #{player.position}
+		li Info: #{player.info}

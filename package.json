@@ -1,0 +1,14 @@
+{
+  "name": "LCS_Stats",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": ">=3.3.7",
+    "jade": "*",
+    "stylus": "*",
+    "mongoose": ">=3.6.18"
+  }
+}

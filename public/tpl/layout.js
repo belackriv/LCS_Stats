@@ -1,0 +1,4 @@
+function anonymous(locals) {
+var buf = [];
+var locals_ = (locals || {}),title = locals_.title;buf.push("<!DOCTYPE html><html><head><title>" + (jade.escape(null == (jade.interp = title) ? "" : jade.interp)) + "</title><link rel=\"stylesheet\" href=\"/css/site.css\"><link rel=\"stylesheet\" href=\"/css/bootstrap.css\"><link rel=\"stylesheet\" href=\"/css/bootstrap-theme.css\"><script src=\"/js/jquery-2.0.3.js\"></script><script src=\"/js/json2.js\"></script><script src=\"/js/underscore.js\"></script><script src=\"/js/bootstrap.js\"></script><script src=\"/js/bootstrap.js\"></script><script src=\"/js/backbone.js\"></script></head><body></body></html>");;return buf.join("");
+}
